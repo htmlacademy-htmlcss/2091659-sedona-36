@@ -3,15 +3,14 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <a class="logo" href="index.html">
-        <img src="images/logo.png" width="140" height="70" alt="Герб Седоны.">
+        <img src="images/logo.svg" width="140" height="70" alt="Герб Седоны.">
       </a>
 
       <nav class="navigation">
@@ -20,7 +19,7 @@
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О седоне</a>
+            <a class="navigation-link" href="about.html">О Cедоне</a>
           </li>
           <li class="navigation-item navigation-item-current">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -212,11 +211,12 @@
         </ul>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter newsletter-modify">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Выш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label class="visually-hidden" for="newsletter-email">Вaш email</label>
+          <input class="field" placeholder="Вaш email" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
