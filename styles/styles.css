@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-body{
+body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -23,18 +23,18 @@ body{
   margin: 0 40px;
 }
 
-.visually-hidden{
+.visually-hidden {
   display: none;
 }
 
 /* Header*/
 
-.page-header{
+.page-header {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
 }
 
-.navigation-link{
+.navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -44,19 +44,19 @@ body{
   text-decoration: none;
 }
 
-.navigation-user li:nth-child(1){
+.navigation-user li:nth-child(1) {
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 1);
 }
 
-.navigation-user li:nth-child(2){
+.navigation-user li:nth-child(2) {
   background-image: url(../images/heart.svg);
   background-color: rgba(255, 255, 255, 1);
   background-repeat: no-repeat;
 }
 
-.counter{
+.counter {
   vertical-align: super;
   font-size: 10px;
   line-height: 10px;
@@ -67,14 +67,14 @@ body{
 
 /*Main*/
 
-.main-index{
+.main-index {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
-/*Hero блок в макете*/
+/*Hero блок в макете секция*/
 
-.greeting{
+.greeting {
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -82,98 +82,98 @@ body{
 
 /*Advantages со списком приемуществ*/
 
-.advantages{
+.advantages {
   color:rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
 
-.advantages-title{
+.advantages-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.advantages-discription{
+.advantages-discription {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
 
-.advantages-list-items{
+.advantages-list-items {
   background-color: rgba(131, 179, 211, 0.12);
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
 
-.advantages-list-title{
+.advantages-list-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.item-differences{
+.item-differences {
   background-color: rgba(130, 179, 211, 1);
   color:rgba(255, 255, 255, 1) ;
 }
 
-.advantages-list li:nth-child(3){
+.advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-/*Services */
+/*Services секция*/
 
-.services-list{
+.services-list {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.services-items-title{
+.services-items-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.services-list li:nth-child(1){
+.services-list li:nth-child(1) {
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
 }
 
-.services-list li:nth-child(2){
+.services-list li:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.2);
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
 }
 
-.services-list li:nth-child(3){
+.services-list li:nth-child(3) {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
 }
 
-/*Booking*/
+/*Booking секция*/
 
-.booking{
+.booking {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 1);
 }
 
-.booking-title{
+.booking-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/*Newsletter раздел подписки */
+/*Newsletter секция подписки */
 
-.newsletter{
+.newsletter {
   background-image: url(../images/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -184,7 +184,7 @@ body{
   font-weight: 400;
 }
 
-.newsletter-title{
+.newsletter-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -193,31 +193,49 @@ body{
 
 /*Footer*/
 
-.page-footer{
+.page-footer {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.social-list li:nth-child(1){
+.social-list li:nth-child(1) {
   background-image: url(../images/vk.svg);
   background-repeat: no-repeat;
 
 }
 
-.social-list li:nth-child(2){
+.social-list li:nth-child(2) {
   background-image: url(../images/telegram.svg);
   background-repeat: no-repeat;
 }
 
-.social-list li:nth-child(3){
+.social-list li:nth-child(3) {
   background-image: url(../images/youtube.svg);
   background-repeat: no-repeat;
 }
 
 /*Catalog*/
 
-/*Newsletter раздел подписки*/
+/*main-inner*/
 
-.newsletter-modify{
+/*filter секция*/
+
+.filter {
+  background-image: url(../images/filter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.filter-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+/*Newsletter секция подписки*/
+
+.newsletter-modify {
   background-image: none;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
