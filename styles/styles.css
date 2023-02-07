@@ -18,6 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   margin: 0 40px;
@@ -191,6 +192,14 @@ body {
   text-transform: uppercase;
 }
 
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 /*Footer*/
 
 .page-footer {
@@ -225,12 +234,68 @@ body {
   background-size: cover;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
 }
 
 .filter-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-options-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/*catalog-hotels секция*/
+
+.catalog-hotels {
+  background-color: rgba(229, 229, 229, 1);
+
+}
+
+.result-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*article  карточка гостиниц*/
+.hotel-list-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-list-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.rating-hotel {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 /*Newsletter секция подписки*/
