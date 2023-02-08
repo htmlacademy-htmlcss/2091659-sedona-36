@@ -31,10 +31,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1200px;
+  text-align: center;
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header*/
@@ -42,6 +53,22 @@ body {
 .page-header {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 28px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .navigation-link {
@@ -54,16 +81,22 @@ body {
   text-decoration: none;
 }
 
-.navigation-user li:nth-child(1) {
-  background-image: url(../images/search.svg);
+.search {
+  background-image: url(../images/search-big.svg);
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 1);
+
+  width: 50px;
+  height: 50px;
+  padding: 15px;
 }
 
-.navigation-user li:nth-child(2) {
-  background-image: url(../images/heart.svg);
-  background-color: rgba(255, 255, 255, 1);
+.heart {
+  background-image: url(../images/heart-big.svg);
   background-repeat: no-repeat;
+
+  width: 20px;
+  height: 20px;
+  padding: 15px;
 }
 
 .counter {
@@ -83,13 +116,14 @@ body {
 
 .main-index {
   color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 /*Hero блок в макете секция*/
 
 .greeting {
   background-image: url(../images/index-background.jpg);
+  background-color: rgba(131, 179, 211, 0.12);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -153,18 +187,18 @@ body {
   text-transform: uppercase;
 }
 
-.services-list li:nth-child(1) {
+.housing {
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
 }
 
-.services-list li:nth-child(2) {
+.food {
   background-color: rgba(0, 0, 0, 0.2);
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
 }
 
-.services-list li:nth-child(3) {
+.souvenirs {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
 }
