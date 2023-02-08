@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+/* html  для Sticky footer*/
+
+html {
+ height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -22,6 +28,9 @@ body {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -67,6 +76,10 @@ body {
 }
 
 /*Main*/
+
+.main-container {
+  flex-grow: 1;
+}
 
 .main-index {
   color: rgba(0, 0, 0, 1);
@@ -296,6 +309,14 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+/*Пагинация*/
+
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 /*Newsletter секция подписки*/
