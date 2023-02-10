@@ -27,11 +27,16 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
-  margin: 0 40px;
+  height: 100%;
+  width: 1280px;
+}
+
+.page-cotainer {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1200px;
   text-align: center;
 }
 
@@ -76,7 +81,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 1);
   color: inherit;
   text-decoration: none;
 }
@@ -84,7 +88,6 @@ body {
 .search {
   background-image: url(../images/search-big.svg);
   background-repeat: no-repeat;
-
   width: 50px;
   height: 50px;
   padding: 15px;
@@ -93,7 +96,6 @@ body {
 .heart {
   background-image: url(../images/heart-big.svg);
   background-repeat: no-repeat;
-
   width: 20px;
   height: 20px;
   padding: 15px;
@@ -125,7 +127,7 @@ body {
   background-image: url(../images/index-background.jpg);
   background-color: rgba(131, 179, 211, 0.12);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1200px 485px;
 }
 
 /*Advantages со списком приемуществ*/
