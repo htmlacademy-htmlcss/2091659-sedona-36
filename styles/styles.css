@@ -18,7 +18,7 @@
 
 html {
  height: 100%;
- background-color: tomato;
+
 }
 
 body {
@@ -27,7 +27,6 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
-  background-color: rgba(242, 242, 242, 1);
   height: 100%;
   width: 1280px;
   margin: 0 auto;
@@ -40,6 +39,8 @@ body {
   flex-direction: column;
   min-height: 100%;
   text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -69,6 +70,8 @@ body {
   display: block;
   width: 140px;
   margin-right: 30px;
+  margin-bottom: -6px;
+  z-index: 1;
 }
 
 .logo img {
@@ -140,7 +143,6 @@ body {
 }
 
 .main-index {
-  color: rgba(0, 0, 0, 1);
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -170,7 +172,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px auto 25px;
+  margin: 0 auto 25px;
   width: 620px;
   padding-top: 69px;
   }
@@ -184,11 +186,11 @@ body {
 }
 
 .advantages-list{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0%;
+
 }
 
 .advantages-list-items {
@@ -239,8 +241,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  padding: 0px;
-  margin: 0px;
+  padding-left: 0;
+  margin: 0;
   display: flex;
 }
 
@@ -248,6 +250,8 @@ body {
   list-style-type: none;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+  padding-top: 183px;
+  padding-bottom: 81px;
 }
 
 .services-items-title {
@@ -256,9 +260,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 230px;
-  margin: 0 auto;
-  padding-top: 183px;
-}
+  margin: 0 auto 30px;
+ }
 
 .services-items-discription {
   width: 230px;
@@ -272,24 +275,21 @@ body {
 .housing {
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
+  background-position: 50% 81px;
   margin: 0 auto;
 }
 
 .food {
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
+  background-position: 50% 81px;
   margin: 0 auto;
 }
 
 .souvenirs {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
+  background-position: 50% 81px;
   margin: 0 auto;
 }
 
@@ -300,6 +300,8 @@ body {
   line-height: 26px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 1);
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .booking-title {
@@ -308,22 +310,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 592px;
-  margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 10px;
+  margin: 0 auto 20px;
 }
 
 .booking-discription {
   width: 592px;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 54px;
-}
-
-.booking-botton {
-  display: block;
-  padding-bottom: 96px;
-
+  margin: 0 auto 54px;
 }
 
 /*Newsletter секция подписки */
@@ -337,6 +329,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .newsletter-title {
@@ -344,21 +338,20 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px;
-  padding-top: 96px;
-  padding-bottom: 10px;
+  margin: 0 auto 20px;
 }
 
 .newsletter-description {
   width: 475px;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 54px;
+  margin: 0 auto 54px;
+
 }
 
 .newsletter-form {
-  padding-bottom: 104px;
+  display: flex;
+  justify-content: center;
 }
+
 
 .field {
   font-family: "PT Sans", sans-serif;
@@ -366,6 +359,13 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  width: 452px;
+  border-radius: 4px 0px 0px 4px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
 }
 
 /*Footer*/
@@ -377,8 +377,8 @@ body {
 
 .social {
   width: 350px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .social-list {
@@ -488,6 +488,7 @@ body {
 .breadcrumbs-link {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
 }
 
 .filter-options {
@@ -646,7 +647,6 @@ body {
 .pagination-item {
   list-style-type: none;
   max-width: 60px;
-
 }
 
 .pagination-link {
@@ -654,6 +654,7 @@ body {
   padding: 12px 24px;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
 }
 
 /*Newsletter секция подписки*/
@@ -662,4 +663,33 @@ body {
   background-image: none;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
+}
+
+/* Button */
+
+.button {
+  padding: 8px 50px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgba(117, 97, 87, 1);
+  color:rgba(255, 255, 255, 1) ;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.booking-button {
+  font-size: 20px;
+}
+
+.newsletter-button {
+  border-radius: 0px 4px 4px 0px;
+  background:rgba(130, 179, 211, 1);
+  font-size: 20px;
+  line-height: 36px;
 }
