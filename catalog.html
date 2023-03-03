@@ -49,7 +49,7 @@
 
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span class="visually-hidden">Главная</span></a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -106,10 +106,17 @@
                 </li>
               </ul>
             </fieldset>
-
-            <div class="filter-options-title">
-              <p>Стоимость, ₽:</p>  <p>Офигенные ползунки которые пока не знаю как делать</p>
-            </div>
+            <fieldset class="filter-options-group filter-price">
+              <legend class="filter-options-title">Стоимость, ₽:</legend>
+              <label>
+                <input class="filter-options-price" type="number" value="0">
+                <span>от</span>
+              </label>
+              <label>
+                <input class="filter-options-price" type="number" value="9000">
+                <span>до</span>
+              </label>
+            </fieldset>
 
             <div class="filter-options-button">
               <button class="button" type="submit">Применить</button>
@@ -134,73 +141,37 @@
 
             <ul class="page-view-list">
               <li class="page-view-item">
-                <a class="page-view-link" href="#">
-                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_33548_2035)">
-                    <g clip-path="url(#clip0_33548_2035)">
-                    <path d="M24 17H20V23H24V17Z" fill="black"/>
-                    <path d="M36 17H32V23H36V17Z" fill="black"/>
-                    <path d="M30 17H26V23H30V17Z" fill="black"/>
-                    <path d="M24 25H20V31H24V25Z" fill="black"/>
-                    <path d="M36 25H32V31H36V25Z" fill="black"/>
-                    <path d="M30 25H26V31H30V25Z" fill="black"/>
-                    </g>
-                      <rect x="5" y="1" width="46" height="46" rx="3" stroke="black" stroke-width="2" shape-rendering="crispEdges"/>
-                    </g>
-                    <defs>
-                      <filter id="filter0_d_33548_2035" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_33548_2035"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33548_2035" result="shape"/>
-                      </filter>
-                      <clipPath id="clip0_33548_2035">
-                        <rect width="16" height="14" fill="white" transform="translate(20 17)"/>
-                      </clipPath>
-                    </defs>
+                <a class="page-view-link view-active" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 0H0V6H4V0Z" fill="black"/>
+                    <path d="M16 0H12V6H16V0Z" fill="black"/>
+                    <path d="M10 0H6V6H10V0Z" fill="black"/>
+                    <path d="M4 8H0V14H4V8Z" fill="black"/>
+                    <path d="M16 8H12V14H16V8Z" fill="black"/>
+                    <path d="M10 8H6V14H10V8Z" fill="black"/>
                   </svg>
                 </a>
               </li>
               <li class="page-view-item">
                 <a class="page-view-link" href="#">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_33548_2210)">
-                        <path d="M32 29H16V31H32V29Z" fill="black"/>
-                        <path d="M30 19V25H18V19H30ZM32 17H16V27H32V17Z" fill="black"/>
-                    </g>
-                    <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
-                    <defs>
-                        <clipPath id="clip0_33548_2210">
-                            <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
-                        </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-              <li class="page-view-item">
-                <a class="page-view-link" href="#">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_33548_2388)">
-                        <path d="M18 17H16V19H18V17Z" fill="black"/>
-                        <path d="M32 17H20V19H32V17Z" fill="black"/>
-                        <path d="M18 21H16V23H18V21Z" fill="black"/>
-                        <path d="M32 21H20V23H32V21Z" fill="black"/>
-                        <path d="M18 25H16V27H18V25Z" fill="black"/>
-                        <path d="M32 25H20V27H32V25Z" fill="black"/>
-                        <path d="M18 29H16V31H18V29Z" fill="black"/>
-                        <path d="M32 29H20V31H32V29Z" fill="black"/>
-                    </g>
-                    <rect x="1" y="1" width="46" height="46" rx="3" stroke="#E5E5E5" stroke-width="2"/>
-                    <defs>
-                        <clipPath id="clip0_33548_2388">
-                            <rect width="16" height="14" fill="white" transform="translate(16 17)"/>
-                        </clipPath>
-                    </defs>
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0V14H16V12Z" fill="black"/>
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
                 </svg>
+                </a>
+              </li>
+              <li class="page-view-item">
+                <a class="page-view-link" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0H0V2H2V0Z" fill="black"/>
+                    <path d="M16 0H4V2H16V0Z" fill="black"/>
+                    <path d="M2 4H0V6H2V4Z" fill="black"/>
+                    <path d="M16 4H4V6H16V4Z" fill="black"/>
+                    <path d="M2 8H0V10H2V8Z" fill="black"/>
+                    <path d="M16 8H4V10H16V8Z" fill="black"/>
+                    <path d="M2 12H0V14H2V12Z" fill="black"/>
+                    <path d="M16 12H4V14H16V12Z" fill="black"/>
+                  </svg>
                 </a>
               </li>
             </ul>
