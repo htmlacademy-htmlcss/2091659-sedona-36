@@ -113,6 +113,7 @@ body {
   min-height: 64px;
   margin-bottom: 0;
   display: flex;
+  box-sizing: border-box;
 }
 
 .navigation-link {
@@ -267,7 +268,23 @@ body {
   margin: 0 auto;
   padding-top: 62px;
   padding-bottom: 102px;
+  position: relative;
 }
+
+.advantages-list-discription::before {
+  content: "";
+  background-color:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 85px;
+  left: 85px;
+  height: 2px;
+  top: 30px;
+}
+
+.item-wraper .advantages-list-discription::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 
 .advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
@@ -437,6 +454,20 @@ body {
   justify-content: center;
 }
 
+.social-icon {
+  padding: 11px 12px;
+  color: rgba(131, 179, 211, 1);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: rgba(104, 162, 202, 1);
+}
+
+.social-icon:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
 .footer-icon-svg {
   display: block;
 }
@@ -453,6 +484,28 @@ body {
   text-align: center;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+}
+
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color:rgba(117, 97, 87, 1);
+}
+
+.contacts-phone:active {
+  color:rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-icon {
+  color:rgba(0, 0, 0, 1);
+}
+
+.htmlacademy-icon:hover,
+.htmlacademy-icon:focus {
+  color:rgba(117, 97, 87, 1);
+}
+
+.htmlacademy-icon:active {
+  color:rgba(117, 97, 87, 0.3);
 }
 
 .htmlacademy-logo {
@@ -501,7 +554,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items: baseline;
   column-gap: 10px;
 }
 
@@ -526,14 +579,6 @@ body {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
   display: block;
-}
-
-.breadcrumbs-link-home {
-  background-image: url(../images/home-breadcrumbs.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 12px;
-  height: 12px;
 }
 
 .filter-options {
@@ -835,4 +880,86 @@ body {
   background:rgba(130, 179, 211, 1);
   font-size: 20px;
   line-height: 36px;
+}
+
+/*.navigation-link:hover {
+  border: 2px solid rgba(229, 229, 229, 1)
+}*/
+
+.button:hover,
+.button:focus  {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button:active {
+  background-color:rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-link:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.hotel-list-button-favourites:hover,
+.hotel-list-button-favourites:focus,
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.hotel-list-button-favourites:active,
+.newsletter-button:active {
+  background-color:rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.hotel-list-button-selected:hover,
+.hotel-list-button-selected:focus {
+  background-color:rgba(108, 158, 66, 1);
+}
+
+.hotel-list-button-selected:active {
+  background-color:rgba(125, 181, 79, 1);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled,
+.hotel-list-button-favourites:disabled,
+.hotel-list-button-selected:disabled {
+  background-color:rgba(229, 229, 229, 1);
+  color:rgba(255, 255, 255, 1);
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color:rgba(104, 162, 202, 1);
+}
+
+.pagination-link:active {
+  background-color: rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.page-view-link:hover,
+.page-view-link:active {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.page-view-link:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
 }
