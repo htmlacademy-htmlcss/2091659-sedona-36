@@ -126,6 +126,20 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color:rgba(117, 98, 87, 1);
+}
+
 .navigation-link-user {
   color: rgba(255, 255, 255, 1);
   padding: 8px 34px;
@@ -515,7 +529,7 @@ body {
 }
 
 .breadcrumbs-link-home {
-  background-image: url(../images/home-icon.svg);
+  background-image: url(../images/home-breadcrumbs.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 12px;
