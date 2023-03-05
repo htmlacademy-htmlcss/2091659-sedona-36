@@ -26,6 +26,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
   height: 100%;
   margin: 0 auto;
 }
@@ -111,6 +112,7 @@ body {
   min-width: 44px;
   min-height: 64px;
   margin-bottom: 0;
+  display: flex;
 }
 
 .navigation-link {
@@ -121,38 +123,55 @@ body {
   color: inherit;
   text-decoration: none;
   display: block;
-  padding: 20px 20px;
+  padding: 20px 16px;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color:rgba(117, 98, 87, 1);
 }
 
 .navigation-link-user {
   color: rgba(255, 255, 255, 1);
   padding: 8px 34px;
-  margin-top: 14px;
+  align-self: center;
+  margin-left: 20px;
 }
 
 .search {
-  background-image: url(../images/search-big.svg);
+  background-image: url(../images/search.svg);
   background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
+  padding: 22px;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .heart {
-  background-image: url(../images/heart-big.svg);
+  background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  padding: 15px;
+  padding: 22px;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .counter {
-  vertical-align: super;
   font-size: 10px;
   line-height: 10px;
   color: rgba(255, 255, 255, 1);
   border-radius: 50%;
   background-color: rgba(125, 181, 79, 1);
+  position: absolute;
+  padding: 5px;
+  top: 12px;
 }
 
 /*Main*/
@@ -168,10 +187,11 @@ body {
 /*Hero блок в макете секция*/
 
 .greeting {
-  background-image: url(../images/index-background.jpg);
+  background-image: url(../images/ladder.svg), url(../images/index-background.jpg);
   background-color: rgba(131, 179, 211, 0.12);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
 }
 
 .greeting-logo {
@@ -380,7 +400,7 @@ body {
   padding-bottom: 14px;
   padding-left: 20px;
   width: 452px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   background-color: rgba(242, 242, 242, 1);
   border: none;
 }
@@ -389,59 +409,57 @@ body {
 
 .page-footer {
   display: flex;
+  padding: 40px 70px 30px 70px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social {
-  width: 350px;
-  padding: 0;
-  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 .social-list {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   justify-content: center;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  align-items: center;
 }
 
 .social-item {
   width: 48px;
   height: 40px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-icon {
-  padding-top: 45px;
-  padding-bottom: 35px;
+.footer-icon-svg {
+  display: block;
 }
 
 .contacts {
-  width: 360px;
-}
-
-.htmlacademy-logo {
-  display: block;
-  width: 350px ;
-  margin: 0 auto;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .contacts-phone {
   display: block;
-  width: 340px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
-  padding-top: 45px;
-  padding-bottom: 35px;
-  margin: 0 auto;
 }
 
+.htmlacademy-logo {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 /*Catalog*/
 
@@ -458,6 +476,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  padding: 35px 70px 70px 70px;
 }
 
 .wraper-filter-title {
@@ -472,61 +491,91 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   text-align: start;
-  padding-top: 35px;
 }
 
 .breadcrumbs {
   font-size: 16px;
   line-height: 21px;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
+  column-gap: 10px;
 }
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: baseline;
+  min-width: 31px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content:'';
+  display: block;
+  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 10px;
+  margin-left: 10px;
+}
+
 
 .breadcrumbs-link {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  border-radius: 4px;
+  display: block;
+}
+
+.breadcrumbs-link-home {
+  background-image: url(../images/home-breadcrumbs.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
 }
 
 .filter-options {
   display: flex;
   justify-content:space-between;
   width: 1060px;
-  margin: 0 auto;
-  padding-top:40px;
-  padding-bottom: 70px;
+  margin: 40px auto 0;
 }
 
 .filter-options-group {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .filter-options-list {
   padding: 0;
-  margin: 0;
+  margin:0;
 }
 
 .filter-options-title {
   text-align:start;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .filter-options-item {
   list-style-type: none;
   text-align:start;
+  margin-top: 16px;
+}
+
+.control-input {
+  width: 20px;
+  height: 20px;
 }
 
 .filter-options-button {
   display: flex;
   flex-flow: column;
-}
-
-.filter-options-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
 }
 
 /*catalog-hotels секция*/
@@ -578,6 +627,17 @@ body {
   padding: 0;
   list-style-type: none;
   align-items: center;
+  gap: 8px;
+}
+
+.page-view-link {
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  padding: 11px 15px 11px 15px;
+}
+
+.view-active {
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .wrapper-hotel-list {
@@ -593,21 +653,20 @@ body {
 
 .hotel-list-card {
   background-color: rgba(255, 255, 255, 1);
-  width: 340px;
+  width: 300px;
   border-color: grey;
   display: grid;
-  grid-template-columns: 20px 150px 150px 20px;
-  grid-template-rows: repeat(5 min-content);
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
   row-gap: 16px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
 }
 
 .hotel-list-link {
   text-decoration: none;
-  grid-column: 2/-2;
+  grid-column: 1/-1;
 }
 
 .hotel-list-title-link {
@@ -615,7 +674,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: inherit;
-  grid-column: 2/-2;
+  grid-column: 1/-1;
   justify-self: start;
   text-decoration: none;
 }
@@ -629,29 +688,27 @@ body {
 }
 
 .hotel-list-type-hotel {
-  grid-column: 2/3;
+  grid-column: 1/2;
   justify-self: start;
 }
 
 .hotel-list-price {
-  grid-column: 3/4;
+  grid-column: 2/3;
   justify-self: end;
 }
 
 .hotel-list-button-detailed {
-  grid-column: 2/3;
+  grid-column: 1/2;
   padding-left: 26px;
   padding-right: 26px;
   font-size: 16px;
-  margin-right: 10px;
 }
 
 .hotel-list-button-favourites {
-  grid-column: 3/4;
+  grid-column: 2/2;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 16px;
-  margin-left: 10px;
   background-color: rgba(130, 179, 211, 1);
 }
 
@@ -662,7 +719,7 @@ body {
 }
 
 .stars {
-  grid-column: 2/3;
+  grid-column: 1/2;
   align-self: center;
 }
 
@@ -670,11 +727,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  grid-column: 3/4;
+  grid-column: 2/3;
   padding: 8px 23px;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
-  margin-left: 10px;
 }
 .hotel-list-button {
   font-size: 16px;
@@ -697,6 +753,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.star-5 {
+  background-image: url(../images/star.svg), url(../images/star.svg), url(../images/star.svg), url(../images/star.svg), url(../images/star.svg);
+  background-position: 0 0, 24px 0, 48px 0, 72px 0, 96px 0;
+}
+
 .star-4 {
   background-image: url(../images/star.svg), url(../images/star.svg), url(../images/star.svg), url(../images/star.svg);
   background-position: 0 0, 24px 0, 48px 0, 72px 0;
@@ -710,6 +771,11 @@ body {
 .star-2 {
   background-image: url(../images/star.svg), url(../images/star.svg);
   background-position: 0 0, 24px 0;
+}
+
+.star-1 {
+  background-image: url(../images/star.svg);
+  background-position: 0 0;
 }
 
 /*Пагинация*/
@@ -765,7 +831,7 @@ body {
 }
 
 .newsletter-button {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   background:rgba(130, 179, 211, 1);
   font-size: 20px;
   line-height: 36px;
