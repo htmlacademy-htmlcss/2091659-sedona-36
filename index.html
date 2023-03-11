@@ -35,7 +35,7 @@
               <a class="navigation-link heart" href="#"><span class="visually-hidden">Избранное</span><span class="counter">12</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда</a>
+              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -59,7 +59,7 @@
                 <h3 class="advantages-list-title">Настоящий городок</h3>
                 <p class="advantages-list-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-             <img class="" src="images/photo-1.jpg" width="800" height="384" alt="Вид настоящего городка.">
+             <img class="advantages-items-img" src="images/photo-1.jpg" width="800" height="384" alt="Вид настоящего городка.">
             </li>
             <li class="advantages-list-items">
               <h3 class="advantages-list-title">Небольшая площадь</h3>
@@ -74,17 +74,17 @@
               <p class="advantages-list-discription">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-list-items item-differences">
-              <img class="" src="images/photo-2.jpg" width="800" height="384" alt="Мост дьявола.">
+              <img class="advantages-items-img" src="images/photo-2.jpg" width="800" height="384" alt="Мост дьявола.">
               <div class="item-wrapper">
-                <h3 class="advantages-list-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-list-title">Там есть<br>мост дьявола</h3>
                 <p class="advantages-list-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
           </ul>
 
           <footer class="advantages">
-            <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="advantages-discription">Опытный персонал и качественное обслуживание!</p>
+            <h2 class="advantages-title advantages-title-footer">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="advantages-discription advantages-discription-footer">Опытный персонал и качественное обслуживание!</p>
           </footer>
         </section>
 
@@ -93,7 +93,7 @@
           <ul class="services-list">
             <li class="services-items housing">
               <h3 class="services-items-title ">Жильё</h3>
-              <p class="services-items-discription">Рекомендуем пожить<br> в настоящем мотеле, всё как в кино!</p>
+              <p class="services-items-discription">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-items food">
               <h3 class="services-items-title ">Еда</h3>
@@ -108,7 +108,7 @@
 
         <section class="booking">
           <h2 class="booking-title">Заинтересовались?</h2>
-          <p class="booking-discription">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="booking-discription">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button booking-button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
 
@@ -117,7 +117,7 @@
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Вaш email</label>
-            <input class="field" placeholder="Вaш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field" placeholder="Вaш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -182,8 +182,11 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="currentColor"/>
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -191,14 +194,14 @@
             <fieldset class="modal-fieldset check-in-date">
               <label class="modal-label check-in-labal" for="check-in-date-field">Дата Заезда:</label>
               <div class="wrapper-modal-fieldset">
-                <input class="modal-date-field" type="text" name="check-in-date" id="check-in-date-field" placeholder="27 апреля 2020">
+                <input class="modal-date-field" type="text" name="check-in-date" id="check-in-date-field" placeholder="Укажите дату" value="27 апреля 2020">
                 <p class="modal-input-info error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </fieldset>
             <fieldset class="modal-fieldset check-out-date">
               <label class="modal-label check-out-labal" for="check-out-labal-field">Дата Выезда:</label>
               <div class="wrapper-modal-fieldset">
-                <input class="modal-date-field" type="text" name="check-out-labal" id="check-out-labal-field" placeholder="1 сентября 2021">
+                <input class="modal-date-field" type="text" name="check-out-labal" id="check-out-labal-field" placeholder="Укажите дату" value="1 сентября 2023">
                 <p class="modal-input-info">На эти даты есть свободные номера. Пока есть.</p>
               </div>
             </fieldset>
@@ -207,10 +210,16 @@
               <div class="wrapper-counter-button">
                 <button class="decrease" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
+                  <svg class="decrease-symbol" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                  </svg>
                 </button>
-                <input class="modal-counter" type="number" name="counter-adults" id="counter-adults-field" value="2">
+                <input class="modal-counter" type="number" name="counter-adults" id="counter-adults-field" value="2" placeholder="0">
                 <button class="increase" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
+                  <svg class="increase-symbol" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                  </svg>
                 </button>
               </div>
             </fieldset>
@@ -223,10 +232,16 @@
               <div class="wrapper-counter-button">
                 <button class="decrease" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
+                  <svg class="decrease-symbol" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                  </svg>
                 </button>
-                <input class="modal-counter" type="number" name="counter-children" id="number-arrivals-children-field" value="2">
+                <input class="modal-counter" type="number" name="counter-children" id="number-arrivals-children-field" value="2" placeholder="0">
                 <button class="increase" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
+                  <svg class="increase-symbol" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                  </svg>
                 </button>
               </div>
             </fieldset>
@@ -234,8 +249,6 @@
           </form>
         </section>
       </div>
-
     </div>
-
   </body>
 </html>

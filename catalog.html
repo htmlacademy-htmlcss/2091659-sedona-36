@@ -17,13 +17,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link " href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -34,7 +34,7 @@
               <a class="navigation-link heart" href="#"><span class="visually-hidden">Избранное</span><span class="counter">12</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда</a>
+              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -43,10 +43,8 @@
       <main class="main-inner main-container">
 
         <section class="filter">
-
           <div class="wrapper-filter-title">
             <h1 class="filter-title">Гостиницы Седоны</h1>
-
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span class="visually-hidden">Главная</span>
@@ -61,7 +59,6 @@
               </li>
             </ol>
           </div>
-
 
           <form class="filter-options" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-options-group">
@@ -92,7 +89,7 @@
             </fieldset>
 
             <fieldset class="filter-options-group">
-              <legend class="filter-options-title">Тип жилья:</legend>
+              <legend class="filter-options-title">Тип Жилья:</legend>
               <ul class="filter-options-list">
                 <li class="filter-options-item">
                   <label class="control">
@@ -121,51 +118,43 @@
               <legend class="filter-options-title">Стоимость, ₽:</legend>
               <div class="wrapper-price-input">
                 <label class="price-input-label">
-                  <input class="filter-options-price price-input-left" type="number" value="0">
+                  <input class="filter-options-price price-input-left" type="number" value="0" placeholder="0">
                   <span class="price-input-content">от</span>
                 </label>
                 <label class="price-input-label">
-                  <input class="filter-options-price price-input-right" type="number" value="9000">
+                  <input class="filter-options-price price-input-right" type="number" value="9000" placeholder="0">
                   <span class="price-input-content">до</span>
                 </label>
               </div>
-
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left:0; width:228px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
               </div>
-
             </fieldset>
-
             <div class="filter-options-button">
               <button class="button filter-options-button-upper" type="submit">Применить</button>
               <button class="button filter-options-button-lower" type="reset">Сбросить</button>
             </div>
-
-
           </form>
         </section>
 
         <section class="catalog-hotels">
           <h2 class="visually-hidden">Каталог гостиниц</h2>
-
           <div class="wrapper-select">
-              <p class="result-title">Найдено гостиниц:38</p>
-
+              <p class="result-title">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-
             <ul class="page-view-list">
               <li class="page-view-item">
                 <a class="page-view-link view-active" href="#">
@@ -206,8 +195,6 @@
               </li>
             </ul>
           </div>
-
-
           <div class="wrapper-hotel-list">
             <article class="hotel-list-card">
               <a class="hotel-list-link" href="#">
@@ -268,7 +255,6 @@
               </p>
               <span class="rating-hotel">Рейтинг: 5,0</span>
              </article>
-
           </div>
 
           <ul class="pagination">
@@ -298,7 +284,7 @@
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Вaш email</label>
-            <input class="field" placeholder="Вaш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field" placeholder="Вaш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
