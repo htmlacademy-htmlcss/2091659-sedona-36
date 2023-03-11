@@ -17,13 +17,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link " href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -34,7 +34,7 @@
               <a class="navigation-link heart" href="#"><span class="visually-hidden">Избранное</span><span class="counter">12</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда</a>
+              <a class="navigation-link navigation-link-user button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -92,7 +92,7 @@
             </fieldset>
 
             <fieldset class="filter-options-group">
-              <legend class="filter-options-title">Тип жилья:</legend>
+              <legend class="filter-options-title">Тип Жилья:</legend>
               <ul class="filter-options-list">
                 <li class="filter-options-item">
                   <label class="control">
@@ -121,11 +121,11 @@
               <legend class="filter-options-title">Стоимость, ₽:</legend>
               <div class="wrapper-price-input">
                 <label class="price-input-label">
-                  <input class="filter-options-price price-input-left" type="number" value="0">
+                  <input class="filter-options-price price-input-left" type="number" value="0" placeholder="0">
                   <span class="price-input-content">от</span>
                 </label>
                 <label class="price-input-label">
-                  <input class="filter-options-price price-input-right" type="number" value="9000">
+                  <input class="filter-options-price price-input-right" type="number" value="9000" placeholder="0">
                   <span class="price-input-content">до</span>
                 </label>
               </div>
@@ -158,7 +158,7 @@
           <h2 class="visually-hidden">Каталог гостиниц</h2>
 
           <div class="wrapper-select">
-              <p class="result-title">Найдено гостиниц:38</p>
+              <p class="result-title">Найдено гостиниц: 38</p>
 
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
@@ -298,7 +298,7 @@
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Вaш email</label>
-            <input class="field" placeholder="Вaш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field" placeholder="Вaш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
