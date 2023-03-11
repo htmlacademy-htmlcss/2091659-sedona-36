@@ -220,11 +220,11 @@ body {
   padding-top: 65px;
   }
 
-  .advantages-title-footer {
-    padding-top: 64px;
-    margin-bottom: 20px;
-    width: 505px;
-  }
+.advantages-title-footer {
+  padding-top: 64px;
+  margin-bottom: 20px;
+  width: 505px;
+}
 
 .advantages-discription {
   font-size: 22px;
@@ -304,10 +304,6 @@ body {
 
 .advantages-list li:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-items-img {
-
 }
 
 /*Services секция*/
@@ -667,8 +663,7 @@ body {
 .control-mark-radio {
   position: absolute;
   left: 0;
-  top: 0
-  ;
+  top: 0;
   width: 20px;
   height: 20px;
   background-color: rgba(255, 255, 255, 1);
@@ -710,7 +705,7 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top:5px;
+  top: 5px;
   left: 4px;
   content: "";
   background-image: url(../images/v-form.svg);
@@ -1112,6 +1107,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
 }
+
 /*Newsletter секция подписки*/
 
 .newsletter-modify {
@@ -1447,8 +1443,6 @@ body {
   outline: 2px solid rgba(0, 0, 0, 1)
   ;
 }
-
-
 
 .modal-date-field {
   font-family: "PT Sans";
