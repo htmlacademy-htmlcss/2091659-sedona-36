@@ -1445,7 +1445,7 @@ body {
 }
 
 .modal-date-field {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
@@ -1551,7 +1551,7 @@ body {
   width: 256px;
   min-height: 50px;
   color: rgba(255, 255, 255, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   border-radius: 10px;
