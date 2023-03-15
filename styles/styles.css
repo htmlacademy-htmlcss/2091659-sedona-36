@@ -970,6 +970,7 @@ body {
   padding: 20px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
+  align-content: start;
 }
 
 .hotel-list-link {
